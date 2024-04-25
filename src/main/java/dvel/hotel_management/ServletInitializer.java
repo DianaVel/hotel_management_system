@@ -1,5 +1,6 @@
-package com.example.demo;
+package dvel.hotel_management;
 
+import dvel.hotel_management.DemoApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
