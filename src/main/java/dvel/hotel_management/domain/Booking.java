@@ -10,15 +10,21 @@ import java.sql.Date;
 @Getter
 @Entity
 @SequenceGenerator(name = "BOOKING_ID_GENERATOR", sequenceName = "BOOKING_ID_SEQUENCE", allocationSize = 1)
-public class Bookings {
+public class Booking {
 
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "BOOKING_ID_GENERATOR")
     @Id
     private int id;
 
+    @Column(name = "ROOM_ID")
+    private int roomNumber;
+
     @ManyToOne()
     @JoinColumn(name = "ROOM_ID")
     private Room room;
+
+    @Column(name = "CUSTOMER_ID)")
+    private int customerId;
 
     @ManyToOne()
     @JoinColumn(name = "CUSTOMER_ID)")

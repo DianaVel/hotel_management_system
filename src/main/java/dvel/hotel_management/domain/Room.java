@@ -22,5 +22,5 @@ public class Room {
     private RoomStatus roomStatus;
 
     @OneToMany(mappedBy = "room")
-    private Set<Bookings> bookings;
+    private Set<Booking> bookings;
 }

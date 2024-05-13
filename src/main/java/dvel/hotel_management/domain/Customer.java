@@ -23,5 +23,5 @@ public class Customer {
     private String surname;
 
     @OneToMany(mappedBy = "customer")
-    private Set<Bookings> bookings;
+    private Set<Booking> bookings;
 }
